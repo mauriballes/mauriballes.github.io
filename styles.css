@@ -1,0 +1,15 @@
+body {
+  background-image: linear-gradient(to bottom right, #0d7ce9, #15cff1);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rounded-image {
+  border-radius: 50%;
+  background-color: white;
+}
+
+.title {
+  color: white;
+  text-shadow: 0 0 10px black;
+}
