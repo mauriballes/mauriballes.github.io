@@ -1,0 +1,63 @@
+# Kubernetes files
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: portfolio-deployment
+  namespace: production
+  labels:
+    app: portfolio
+    version: "1.0"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: portfolio
+      version: "1.0"
+  template:
+    metadata:
+      labels:
+        app: portfolio
+        version: "1.0"
+    spec:
+      containers:
+        - name: portfolio
+          image: mauriballes/portfolio:1.0
+          ports:
+            - containerPort: 80
+          resources:
+            limits:
+              cpu: 500m
+              memory: 512Mi
+            requests:
+              cpu: 100m
+              memory: 102Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: portfolio-service
+  namespace: production
+spec:
+  selector:
+    app: portfolio
+    version: "1.0"
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: portfolio-ingress
+  namespace: production
+spec:
+  rules:
+    - host: mauriballes.com
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: portfolio-service
+              servicePort: 80
