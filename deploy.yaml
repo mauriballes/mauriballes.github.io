@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: portfolio
-          image: mauriballes/portfolio:1.1
+          image: mauriballes/portfolio:1.2
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 80
