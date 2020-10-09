@@ -3,170 +3,143 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="stylesheet" href="styles.css" />
 
-    <!-- Bootstrap CSS -->
+    <!-- Icons -->
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     />
 
-    <title>Porfolio</title>
+    <!-- Fonts -->
+    <link
+      href="http://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>@mauriballes</title>
   </head>
   <body>
     <div class="container">
-      <div class="row my-4">
-        <div class="col-12 text-center">
-          <h1 class="title">@mauriballes</h1>
+      <!-- Page 1 -->
+      <div class="layout background-1" id="p1">
+        <div class="content fill-margin-top">
+          <img src="images/logo.png" class="rounded-image" alt="Logo" />
+          <p class="text-message">
+            Welcome to my page! Scroll down for more information.
+          </p>
+        </div>
+        <div class="arrow-down">
+          <a href="#p2"><i class="fas fa-chevron-circle-down icon-size"></i></a>
         </div>
       </div>
-      <div class="row my-4">
-        <div class="col-12 text-center">
-          <img
-            src="images/logo.png"
-            class="rounded-image"
-            height="200"
-            alt="Logo"
-          />
+      <!-- Page 2 -->
+      <div class="layout background-2" id="p2">
+        <div class="arrow-up">
+          <a href="#p1"><i class="fas fa-chevron-circle-up icon-size"></i></a>
+        </div>
+        <div class="content">
+          <img src="images/about.jpg" class="rounded-image" alt="Logo" />
+          <p class="text-message">
+            Hi, my name is Mauricio Ballesteros. I am software engineer that
+            lives in Bolivia. My passions are programming, basketball and rock
+            and roll.
+          </p>
+        </div>
+        <div class="arrow-down">
+          <a href="#p3"><i class="fas fa-chevron-circle-down icon-size"></i></a>
         </div>
       </div>
-      <div class="row my-4">
-        <div class="col-12">
-          <div class="card mx-auto" style="max-width: 540px;">
-            <div class="row no-gutters">
-              <div class="col-md-4">
-                <img src="images/about.jpg" class="card-img" alt="Me" />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <p class="card-text">
-                    Hi, my name is Mauricio Ballesteros. I am software engineer
-                    that lives in Bolivia. My passions are programming,
-                    basketball and rock and roll.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+      <!-- Page 3 -->
+      <div class="layout background-3" id="p3">
+        <div class="arrow-up">
+          <a href="#p2"><i class="fas fa-chevron-circle-up icon-size"></i></a>
+        </div>
+        <div class="content">
+          <img src="images/cv.png" class="rounded-image" alt="Logo" />
+          <p class="text-message">
+            If you want to know more about my jobs and skills, you can review my
+            resume in the following
+            <a class="link" href="http://cv.mauriballes.com" target="_blank"
+              >link</a
+            >.
+          </p>
+        </div>
+        <div class="arrow-down">
+          <a href="#p4"><i class="fas fa-chevron-circle-down icon-size"></i></a>
         </div>
       </div>
-      <div class="row my-4">
-        <div class="col-12">
-          <div class="card mx-auto" style="max-width: 540px;">
-            <div class="row no-gutters">
-              <div class="col-md-4">
-                <img src="images/cv.png" class="card-img" alt="CV" />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <p class="card-text">
-                    If you want to know more about my jobs and skills, you can
-                    review my resume in the following
-                    <a href="http://cv.mauriballes.com" target="_blank">link</a
-                    >.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+      <!-- Page 4 -->
+      <div class="layout background-1" id="p4">
+        <div class="arrow-up">
+          <a href="#p3"><i class="fas fa-chevron-circle-up icon-size"></i></a>
+        </div>
+        <div class="content">
+          <img src="images/github.png" class="rounded-image" alt="Logo" />
+          <p class="text-message">
+            I have interesting projects in my GitHub, you can check some of them
+            in my
+            <a
+              class="link"
+              href="https://github.com/mauriballes"
+              target="_blank"
+              >profile</a
+            >. Also, if you have an interesting project, you can talk with me
+            and maybe I can help you with that.
+          </p>
+        </div>
+        <div class="arrow-down">
+          <a href="#p5"><i class="fas fa-chevron-circle-down icon-size"></i></a>
         </div>
       </div>
-      <div class="row my-4">
-        <div class="col-12">
-          <div class="card mx-auto" style="max-width: 540px;">
-            <div class="row no-gutters">
-              <div class="col-md-4">
-                <img src="images/github.png" class="card-img" alt="CV" />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <p class="card-text">
-                    I have interesting projects in my GitHub, you can check some
-                    of them in my
-                    <a href="https://github.com/mauriballes" target="_blank"
-                      >profile</a
-                    >. Also, if you have an interesting project, you can talk
-                    with me and maybe I can help you with that.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+      <!-- Page 5 -->
+      <div class="layout background-2" id="p5">
+        <div class="arrow-up">
+          <a href="#p4"><i class="fas fa-chevron-circle-up icon-size"></i></a>
+        </div>
+        <div class="content">
+          <img src="images/twitter.png" class="rounded-image" alt="Logo" />
+          <p class="text-message">
+            Follow me on
+            <a
+              class="link"
+              href="https://twitter.com/mauriballes"
+              target="_blank"
+              >twitter</a
+            >. I always want to meet new people in the world. I like to share my
+            knowledge and share my experience with others.
+          </p>
+        </div>
+        <div class="arrow-down">
+          <a href="#p6"><i class="fas fa-chevron-circle-down icon-size"></i></a>
         </div>
       </div>
-      <div class="row my-4">
-        <div class="col-12">
-          <div class="card mx-auto" style="max-width: 540px;">
-            <div class="row no-gutters">
-              <div class="col-md-4">
-                <img src="images/twitter.png" class="card-img" alt="CV" />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <p class="card-text">
-                    Follow me on
-                    <a href="https://twitter.com/mauriballes" target="_blank"
-                      >twitter</a
-                    >. I always want to meet new people in the world. I like to
-                    share my knowledge and share my experience with others.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+      <!-- Page 6 -->
+      <div class="layout background-1" id="p6">
+        <div class="arrow-up">
+          <a href="#p5"><i class="fas fa-chevron-circle-up icon-size"></i></a>
         </div>
-      </div>
-      <div class="row my-4">
-        <div class="col-12">
-          <div class="card mx-auto" style="max-width: 540px;">
-            <div class="row no-gutters">
-              <div class="col-md-4">
-                <img src="images/youtube.png" class="card-img" alt="CV" />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <p class="card-text">
-                    I have a Youtube Channel. If you want to know about software
-                    development, you can follow some of my tutorials. Check my
-                    <a
-                      href="https://www.youtube.com/channel/UCk23CTi6hzXg4H_iTuXcMEQ"
-                      target="_blank"
-                      >channel</a
-                    >
-                    for learning about some new things.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="content fill-margin-bottom">
+          <img src="images/youtube.png" class="rounded-image" alt="Logo" />
+          <p class="text-message">
+            I have a Youtube Channel. If you want to know about software
+            development, you can follow some of my tutorials. Check my
+            <a
+              class="link"
+              href="https://www.youtube.com/channel/UCk23CTi6hzXg4H_iTuXcMEQ"
+              target="_blank"
+              >channel</a
+            >
+            for learning about some new things.
+          </p>
         </div>
       </div>
     </div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

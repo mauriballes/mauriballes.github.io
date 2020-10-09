@@ -1,15 +1,138 @@
-body {
+/* body {
   background-image: linear-gradient(to bottom right, #0d7ce9, #15cff1);
   background-repeat: no-repeat;
   background-size: cover;
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto";
+  font-size: 32px;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a:link {
+  color: #fcfcfc;
+}
+
+a:visited {
+  color: #fcfcfc;
+}
+
+a:hover {
+  color: #fcfcfc;
+}
+
+a:active {
+  color: #fcfcfc;
+}
+
+a.link:link {
+  color: #0d7ce9;
+}
+
+a.link:visited {
+  color: #0d7ce9;
+}
+
+a.link:hover {
+  color: #15cff1;
+}
+
+a.link:active {
+  color: #0d7ce9;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.background-1 {
+  background-color: #0d7ce9;
+}
+
+.background-2 {
+  background-color: #15cff1;
+}
+
+.background-3 {
+  background-color: #212121;
+}
+
+.fill-margin-top {
+  margin-top: 10vh;
+}
+
+.fill-margin-bottom {
+  margin-bottom: 10vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.text-message {
+  background-color: #fcfcfc;
+  border-radius: 5px;
+  padding: 20px;
+  width: 35vw;
+  margin: 20px;
+}
+
+.icon-size {
+  font-size: 32px;
+}
+
+.arrow-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.arrow-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
 }
 
 .rounded-image {
   border-radius: 50%;
+  border-color: #212121;
   background-color: white;
+  height: 300px;
 }
 
-.title {
-  color: white;
-  text-shadow: 0 0 10px black;
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 24px;
+  }
+
+  .text-message {
+    width: 65vw;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .rounded-image {
+    height: 200px;
+  }
 }
