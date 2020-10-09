@@ -7,23 +7,23 @@ metadata:
   namespace: dev
   labels:
     app: portfolio
-    version: "1.0"
+    version: "2.0"
 spec:
   replicas: 1
   selector:
     matchLabels:
       app: portfolio
-      version: "1.0"
+      version: "2.0"
   template:
     metadata:
       labels:
         app: portfolio
-        version: "1.0"
+        version: "2.0"
     spec:
       containers:
         - name: portfolio
-          image: mauriballes/portfolio:1.4
-          imagePullPolicy: IfNotPresent
+          image: mauriballes/portfolio:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 80
           resources:
@@ -42,7 +42,7 @@ metadata:
 spec:
   selector:
     app: portfolio
-    version: "1.0"
+    version: "2.0"
   ports:
     - protocol: TCP
       port: 80
