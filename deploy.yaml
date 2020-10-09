@@ -22,8 +22,8 @@ spec:
     spec:
       containers:
         - name: portfolio
-          image: mauriballes/portfolio:latest
-          imagePullPolicy: Always
+          image: mauriballes/portfolio:2.0
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 80
           resources:
